@@ -1,77 +1,28 @@
-//import Image from 'next/image'
-//import Header from '../components/header';
-//import HeadSeo from '../components/headSeo';
-//import Link from 'next/link';
-import Layout from '../components/displayLayout';
-// import Competence from './pages/competence/page';
-// import Contact from './pages/contact/page';
-// import Presentation from './pages/presentation/page';
-// import Projets from './pages/projets/page';
-// import Service from './pages/service/page';
+'use client'
+
+import React from 'react';
+import Competence from '@/components/competence';
+import Contact from '@/components/contact';
+import Presentation from '@/components/presentation';
+import Portfolio from '@/components//projets';
+import Service from '@/components//service';
+import RootLayout from './layout';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+// import Head from 'next/head';
 
 export default function Home() {
   return (
-          <div>
-            <Layout>
-              {/* <HeadSeo /> */}
-              <h1 className='bg-red-400'>Portfolio Denis Thibaut</h1>
-              <h2>Developpeur Web Full Stack</h2>
-              {/* <Presentation /> */}
-              <p>paragraphe se paration  </p>
-              {/* <Competence /> */}
-              <p>paragraphe se paration  </p>
-              {/* <Service /> */}
-              <p>paragraphe se paration  </p>
-              {/* <Projets /> */}
-              <p>paragraphe se paration  </p>
-              {/* <Contact /> */}
-           </Layout> 
-          </div>
-  )
+    <div className='p-0 m-0 h-full w-full sm:text-lg lg:text-2xl 2xl:text-3xl'>
+        <RootLayout>
+            <Header />
+            <Presentation />
+            <Competence />
+            <Service />
+            <Portfolio />
+            <Contact />
+            <Footer />
+        </RootLayout>
+      </div>
+  );
 }
-
-/*******
- * 
- * exemple lien active
- 
-'use client'
- 
-import { usePathname } from 'next/navigation'
-import Link from 'next/link'
- 
-export function Navigation({ navLinks }) {
-  const pathname = usePathname()
- 
-  return (
-    <>
-      {navLinks.map((link) => {
-        const isActive = pathname === link.href
- 
-        return (
-          <Link
-            className={isActive ? 'text-blue' : 'text-black'}
-            href={link.href}
-            key={link.name}
-          >
-            {link.name}
-          </Link>
-        )
-      })}
-    </>
-  )
-}
-
- * 
- */
-
-
-
-// export default function Home() {
-//   return (
-//     <main>
-//       <div className="text-center">
-//           <h1 className='bg-red-400 text-slate-700'>welcome doudou</h1>
-//       </div>
-//     </main>
-//   )
-// }

@@ -1,9 +1,10 @@
-import booki from '../IMAGES/Booki.webp';
-import sophie from '../IMAGES/Sophie_Bluel.webp';
-import qwenta from '../IMAGES/qwenta.webp';
-import nina from '../IMAGES/Nina_Carducci.webp';
-import kasa from '../IMAGES/Kasa.webp';
-import grimoire from '../IMAGES/Grimoire.webp';
+import booki from '../../public/images/Booki.webp';
+import sophie from '../../public/images/Sophie_Bluel.webp';
+import qwenta from '../../public/images/qwenta.webp';
+import nina from '../../public/images/Nina_Carducci.webp';
+import kasa from '../../public/images/Kasa.webp';
+import grimoire from '../../public/images/Grimoire.webp';
+import portfolio from '../../public/images/Portfolio_Denis_Thibaut_V1.jpg';
 
 export const dataProjets = [
     {
@@ -13,8 +14,8 @@ export const dataProjets = [
         image : booki,
         lien : 'https://github.com/ThibautTobi/Projet_2.git',
         langage : ['HTML', 'CSS'] ,
-        description : `Créez la page d'accueil d'une agence de voyage Booki avec HTML & CSS,
-        la page est en responsive pour écran d'ordinateur,tablette,mobile.`,
+        description : `Création de la page d'accueil d'une agence de voyage Booki en HTML & CSS,
+        la page est en responsive pour tous type d'écran.`,
         problematique : `les problématiques que j'ai pu avoir ce sont la partie responsive sur les trois types d'écrans conforme a la maquette`,
         competence :[
             `- versionner son projet avec git et github.`,
@@ -120,9 +121,8 @@ export const dataProjets = [
         id : 7,
         name : 'portfolio',
         projet : 'Projet : OpenClassrooms',
-        image : 'vous étes sur la page',
-        imageMobile: 'vous étes sur la page',
-        lien : 'https://github.com/ThibautTobi/Portfolio-Thibaut.git',
+        image : portfolio,
+        lien : 'https://thibauttobi.github.io/Portfolio-Thibaut/',
         langage : ['HTML','CSS','React','Node Js', 'Express','mongoose','Mongo DB'] ,
         description : `Développez Mon propre PortFolio.`,
         problematique : `trouver un bon design`,
@@ -140,13 +140,3 @@ export const dataProjets = [
         ]
         }
 ];
-
-// export const dataCompetences = [
-
-// {
-//     id :'',
-//     reference:'',
-//     icone:'',
-//     name:'',
-// }
-// ];
