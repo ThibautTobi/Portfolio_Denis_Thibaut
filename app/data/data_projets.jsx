@@ -1,12 +1,12 @@
-import booki from '../../public/images/Booki.webp';
-import sophie from '../../public/images/Sophie_Bluel.webp';
-import qwenta from '../../public/images/qwenta.webp';
-import nina from '../../public/images/Nina_Carducci.webp';
-import kasa from '../../public/images/Kasa.webp';
-import grimoire from '../../public/images/Grimoire.webp';
-import portfolio from '../../public/images/Portfolio_Denis_Thibaut_V1.jpg';
+import booki from '../../public/Booki.webp';
+import sophie from '../../public/Sophie_Bluel.webp';
+import qwenta from '../../public/qwenta.webp';
+import nina from '../../public/Nina_Carducci.webp';
+import kasa from '../../public/Kasa.webp';
+import grimoire from '../../public/Grimoire.webp';
+import portfolio from '../../public/Portfolio_Denis_Thibaut_V1.jpg';
 
-export const dataProjets = [
+const dataProjets = [
     {
         id : 1,
         name : 'Booki',
@@ -140,3 +140,5 @@ export const dataProjets = [
         ]
         }
 ];
+
+export default dataProjets;

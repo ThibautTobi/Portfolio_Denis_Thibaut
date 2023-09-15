@@ -1,9 +1,8 @@
 'use client'
-import React from 'react';
 import { useState,useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../public/images/icone/dev.svg';
+import logo from '../../public/icone/dev.svg';
 
 export default function NavBar() {
 
@@ -103,20 +102,20 @@ useEffect(() => {
           className='m-1'
         />
         <ul className="flex flex-row items-center space-x-2 to-slate-800 font-bold sm:text-white sm:p-3 lg:space-x-4">
-          <li>
-            <Link href="#presentation" className={`${activeSection === 'presentation' ? 'border-b-2' : ''}`}>Présentation</Link>
+          <li className='sm:p-2 sm:rounded-lg sm:hover:bg-slate-500'>
+            <Link href="#presentation" className={`${activeSection === 'presentation' ? 'border-b-2 lg:border-b-3' : ''}`}>Présentation</Link>
           </li>
-          <li>
-            <Link href="#competence" className={`${activeSection === 'competence' ? 'border-b-2' : ''}`}>Compétences</Link>
+          <li className='sm:p-2 sm:rounded-lg sm:hover:bg-slate-500'>
+            <Link href="#competence" className={`${activeSection === 'competence' ? 'border-b-2 lg:border-b-3' : ''}`}>Compétences</Link>
           </li>
-          <li>
-            <Link href="#service" className={`${activeSection === 'service' ? 'border-b-2' : ''}`}>Services</Link>
+          <li className='sm:p-2 sm:rounded-lg sm:hover:bg-slate-500'>
+            <Link href="#service" className={`${activeSection === 'service' ? 'border-b-2 lg:border-b-3' : ''}`}>Services</Link>
           </li>
-          <li>
-            <Link href="#projet" className={`${activeSection === 'projet' ? 'border-b-2' : ''}`}>Projets</Link>
+          <li className='sm:p-2 sm:rounded-lg sm:hover:bg-slate-500'>
+            <Link href="#projet" className={`${activeSection === 'projet' ? 'border-b-2 lg:border-b-3' : ''}`}>Projets</Link>
           </li>
-          <li>
-            <Link href="#contact" className={`${activeSection === 'contact' ? 'border-b-2' : ''}`}>Contact</Link>
+          <li className='sm:p-2 sm:rounded-lg sm:hover:bg-slate-500'>
+            <Link href="#contact" className={`${activeSection === 'contact' ? 'border-b-2 lg:border-b-3' : ''}`}>Contact</Link>
           </li>
         </ul>
       </div>

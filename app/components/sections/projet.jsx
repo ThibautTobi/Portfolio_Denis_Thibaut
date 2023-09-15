@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react';
-import { dataProjets } from "@/data/data_projets";
+import dataProjets from "../../data/data_projets";
 import Image from "next/image";
-import flecheFermer from "../../public/images/icone/flecheFermer.svg";
-import flecheOuvert from "../../public/images/icone/flecheOuvert.svg";
+import flecheFermer from "../../../public/icone/flecheFermer.svg";
+import flecheOuvert from "../../../public/icone/flecheOuvert.svg";
 import Link from 'next/link';
 
 function Projets() {
@@ -28,7 +28,7 @@ function Projets() {
         <h2 className="m-4 text-xl font-bold lg:text-4xl lg:m-8">Mes différents Projets :</h2>
         <div className='flex flex-wrap justify-around'>
           {dataProjets.map((item, index) => (
-            <div key={index} className="border-solid border-white border-2 p-3 mb-4 rounded-lg hover:bg-transparent items-center max-w-[350px] sm:max-w-[500px]">
+            <div key={index} className="border-solid border-white border-2 p-3 mb-4 rounded-lg hover:bg-transparent items-center max-w-[350px] sm:max-w-[500px] lg:m-8">
               <h3 className="text-lg sm:text-xl lg:text-2xl mt-3 mb-3">{item.name}</h3>
               <h4 className="text-lg sm:text-xl lg:text-2xl mt-3 mb-3">{item.projet}</h4>
               <Image 
@@ -100,13 +100,4 @@ function Projets() {
     </section>
   );
 };
-
-  // export async function getStaticProps() {
-  //   return {
-  //     props: {
-  //       projetsData: dataProjets
-  //     }
-  //   };
-  // }
-
 export default Projets;
