@@ -1,4 +1,3 @@
-'use client'
 import Competence from './components/sections/competence';
 import Contact from './components/sections/contact';
 import Presentation from './components/sections/presentation';

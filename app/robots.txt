@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /
+Allow: /$
+Noindex: /
+Nocache: /
+
+User-agent: Googlebot
+Allow: /
+Noindex: /
+Noimageindex: /
+
+Sitemap: https://acme.com/sitemap.xml

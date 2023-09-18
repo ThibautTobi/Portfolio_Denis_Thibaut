@@ -8,7 +8,7 @@ export const metadata = {
     width: 'device-width',
     initialScale: 1,
   },
-  // keywords: ['Next.js', 'React', 'JavaScript'],
+  keywords: ['Developpeur Web', 'Developpeur Front End', 'Developpeur Back End', 'Developpeur Full Stack'],
   // metadataBase : new URL(''),
 
   // alternates: {
@@ -24,27 +24,27 @@ export const metadata = {
   //   },
   // },
 
-  // openGraph: {
-  //   title: 'Denis Thibaut Développeur',
-  //   description: `Denis Thibaut, développeur web freelance basé à Barentin, spécialisé dans la création de sites web sur mesure, performants et adaptés aux mobiles. J'offre des solutions digitales innovantes pour les entreprises, startups et particuliers. Mon expertise couvre le développement front-end et back-end, ainsi que l'optimisation SEO. Découvrez mon portfolio et transformez votre vision en réalité digitale.`,
-  //   url: 'https://nextjs.org',
-  //   siteName: 'Denis Thibaut Développeur',
-  //   images: [
-  //     {
-  //       url: 'https://nextjs.org/public/og.png',
-  //       width: 800,
-  //       height: 600,
-  //     },
-  //     {
-  //       url: 'https://nextjs.org/og-alt.png',
-  //       width: 1800,
-  //       height: 1600,
-  //       alt: 'Développement Web',
-  //     },
-  //   ],
-  //   locale: 'fr-FR',
-  //   type: 'website',
-  // },
+  openGraph: {
+    title: 'Denis Thibaut Développeur',
+    description: `Denis Thibaut, développeur web freelance basé à Barentin, spécialisé dans la création de sites web sur mesure, performants et adaptés aux mobiles. J'offre des solutions digitales innovantes pour les entreprises, startups et particuliers. Mon expertise couvre le développement front-end et back-end, ainsi que l'optimisation SEO. Découvrez mon portfolio et transformez votre vision en réalité digitale.`,
+    url: 'https://nextjs.org',
+    siteName: 'Denis Thibaut Développeur',
+    images: [
+      {
+        url: 'https:my-portfolio/public/banner-pc-800-600.webp',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https:my-portfolio/public/banner-pc-1800-1600.webp',
+        width: 1800,
+        height: 1600,
+        alt: 'Développement Web',
+      },
+    ],
+    locale: 'fr-FR',
+    type: 'website',
+  },
 
 
   // verification: {
