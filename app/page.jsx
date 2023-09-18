@@ -9,8 +9,8 @@ import Header from './components/header';
 import Footer from './components/footer';
 
 export default function Home() {
+ 
   return (
-    // <div className='p-0 m-0 h-full w-full sm:text-lg lg:text-2xl 2xl:text-3xl'>
         <RootLayout>
           <main className='p-0 m-0'>
             <Header />
@@ -22,6 +22,5 @@ export default function Home() {
             <Footer />
           </main>
         </RootLayout>
-      // </div>
   );
 }

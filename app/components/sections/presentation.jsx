@@ -16,7 +16,7 @@ export default function Presentation (){
                             className="rounded-xl m-auto border-solid border-4 border-slate-800"
                         />
                         <h2 className="text-slate-800 mt-4 mb-4 text-xl font-bold"> Développeur Full Stack</h2>
-                        <p className="w-4/5 bg-slate-400 rounded-xl m-auto p-4 mb-6 lg:mb-10">
+                        <p className="w-4/5 text-lg bg-slate-400 rounded-xl m-auto p-4 mb-6 lg:mb-10">
                         Je suis Denis Thibaut, un développeur web Full Stack Javascript.<br/>
                         J'aime les challenges et je suis passionné par la création de solutions numériques.<br/>
                         Je suis compétent dans divers langages comme en HTML, CSS, JavaScript et librairie ou framework comme  
