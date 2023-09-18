@@ -14,7 +14,8 @@
 
 # production
 /build
-
+/.env.production
+# ou /.env* pour toutes les variables environements
 # misc
 .DS_Store
 *.pem
