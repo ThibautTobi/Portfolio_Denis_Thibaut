@@ -1,42 +1,33 @@
-
 import './globals.css';
 
 export const metadata = {
+  charset: "UTF-8",
+  viewport: "width=device-width, initial-scale=1.0",
   title: 'Denis Thibaut Développeur',
   description: `Denis Thibaut, développeur web freelance basé à Barentin, spécialisé dans la création de sites web sur mesure, performants et adaptés aux mobiles. J'offre des solutions digitales innovantes pour les entreprises, startups et particuliers. Mon expertise couvre le développement front-end et back-end, ainsi que l'optimisation SEO. Découvrez mon portfolio et transformez votre vision en réalité digitale.`,
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
   keywords: ['Developpeur Web', 'Developpeur Front End', 'Developpeur Back End', 'Developpeur Full Stack'],
-  // metadataBase : new URL(''),
-
-  // alternates: {
-  //   canonical: 'https://nextjs.org',
-  //   languages: {
-  //     'fr-FR': 'https://nextjs.org/en-US'
-  //   },
-  //   media: {
-  //     'only screen and (max-width: 600px)': 'https://nextjs.org/mobile',
-  //   },
-  //   types: {
-  //     'application/rss+xml': 'https://nextjs.org/rss',
-  //   },
-  // },
-
+  author: 'Denis Thibaut',
+  robots: 'index, follow',
+  canonical: 'https://denis-thibaut.com',
+  url: 'https://denis-thibaut.com',
+  image: 'https://denis-thibaut.com/public/banner-pc-1800-1600.webp',
+  alt: `Developpeur Denis Thibaut`,
+  locale: 'fr-FR',
+  type: 'website',
   openGraph: {
     title: 'Denis Thibaut Développeur',
     description: `Denis Thibaut, développeur web freelance basé à Barentin, spécialisé dans la création de sites web sur mesure, performants et adaptés aux mobiles. J'offre des solutions digitales innovantes pour les entreprises, startups et particuliers. Mon expertise couvre le développement front-end et back-end, ainsi que l'optimisation SEO. Découvrez mon portfolio et transformez votre vision en réalité digitale.`,
-    url: 'https://nextjs.org',
+    url: 'https://denis-thibaut.com',
     siteName: 'Denis Thibaut Développeur',
     images: [
       {
-        url: 'https:my-portfolio/public/banner-pc-800-600.webp',
+        url: 'https://denis-thibaut.com/public/banner-pc-800-600.webp',
         width: 800,
         height: 600,
+        alt: 'Développeur Web'
       },
       {
-        url: 'https:my-portfolio/public/banner-pc-1800-1600.webp',
+        url: 'https://denis-thibaut.com/public/banner-pc-1800-1600.webp',
         width: 1800,
         height: 1600,
         alt: 'Développement Web',
@@ -45,31 +36,13 @@ export const metadata = {
     locale: 'fr-FR',
     type: 'website',
   },
-
-
-  // verification: {
-  //   google: 'google',
-  //   yandex: 'yandex',
-  //   yahoo: 'yahoo',
-  //   other: {
-  //     me: ['my-email', 'my-link'],
-  //   },
-  // },
-
-
-  // robots: {
-  //   index: false,
-  //   follow: true,
-  //   nocache: true,
-  //   googleBot: {
-  //     index: true,
-  //     follow: false,
-  //     noimageindex: true,
-  //     'max-video-preview': -1,
-  //     'max-image-preview': 'large',
-  //     'max-snippet': -1,
-  //   },
-  // },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Développeur Denis Thibaut',
+    description: `Denis Thibaut, développeur web freelance basé à Barentin, spécialisé dans la création de sites web sur mesure, performants et adaptés aux mobiles. J'offre des solutions digitales innovantes pour les entreprises, startups et particuliers. Mon expertise couvre le développement front-end et back-end, ainsi que l'optimisation SEO. Découvrez mon portfolio et transformez votre vision en réalité digitale.`,
+    creator: 'Denis Thibaut',
+    images: ['https://denis-thibaut.com/public/banner-pc-1800-1600.webp'],
+  },
 
   // icons: {
   //   icon: '/icon.png',
@@ -82,16 +55,6 @@ export const metadata = {
   // },
 
   // manifest: 'https://nextjs.org/manifest.json',
-
-  // twitter: {
-  //   card: 'summary_large_image',
-  //   title: 'Next.js',
-  //   description: 'The React Framework for the Web',
-  //   siteId: '1467726470533754880',
-  //   creator: '@nextjs',
-  //   creatorId: '1467726470533754880',
-  //   images: ['https://nextjs.org/og.png'],
-  // },
 
   // itunes: {
   //   appId: 'myAppStoreID',
@@ -125,62 +88,9 @@ export const metadata = {
   //   },
   // },
 
-  // category: 'technology',
-/***** autes balises *****/
-  // other: {
-  //   custom: 'meta',
-  // },
-  // rendu : <meta name="custom" content="meta" />
-
-
 }
 
 export default function RootLayout({ children }) {
-
-  // const schemaOrgData = {
-  //   "@context": "http://schema.org",
-  //   "@type": "Service",
-  //   "name": "Thibaut Denis Développeur Web",
-  //   "image": "/images/banner-pc-1200-675.jpg",
-  //   "description": "Denis Thibaut, développeur web freelance basé à Barentin, spécialisé dans la création de sites web sur mesure, performants et adaptés aux mobiles. J'offre des solutions digitales innovantes pour les entreprises, startups et particuliers. Mon expertise couvre le développement front-end et back-end, ainsi que l'optimisation SEO. Découvrez mon portfolio et transformez votre vision en réalité digitale.",
-  //   "openingHoursSpecification": [
-  //     {
-  //       "@type": "OpeningHoursSpecification",
-  //       "dayOfWeek": [
-  //         "Monday",
-  //         "Tuesday",
-  //         "Wednesday",
-  //         "Thursday",
-  //         "Friday"
-  //       ],
-  //       "opens": "09:00",
-  //       "closes": "12:00"
-  //     },
-  //     {
-  //       "@type": "OpeningHoursSpecification",
-  //       "dayOfWeek": [
-  //         "Monday",
-  //         "Tuesday",
-  //         "Wednesday",
-  //         "Thursday",
-  //         "Friday"
-  //       ],
-  //       "opens": "13:30",
-  //       "closes": "17:30"
-  //     }
-  //   ],
-  //   "address": {
-  //     "@type": "PostalAddress",
-  //     "addressLocality": "Barentin",
-  //     "addressRegion": "76360"
-  //   },
-  //   "serviceType": [
-  //     "Développeur Full Stack",
-  //     "Développeur Front End",
-  //     "Développeur Back End",
-  //     "Développeur Web"
-  //   ]
-  // };
 
   return (
     <html lang='fr'>
