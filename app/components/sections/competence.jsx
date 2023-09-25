@@ -71,7 +71,7 @@ export default function Competence() {
   return (
         <section id="competence" className='bg-slate-800 text-white p-2'>
           <h2 className="text-2xl text-center font-bold m-3 lg:text-4xl">Compétences</h2>
-          <Image src={code} alt='' width={110} height={110} className='m-auto mt-4 mb-4' />
+          <Image src={code} alt='code' width={110} height={110} className='m-auto mt-4 mb-4' />
           <div className='flex flex-col md:flex-row'>
               {dataCompetence.map(category => (
                   <div key={category.category} className="mb-6 text-center p-6 ml-3 mr-3 md:w-1/2">

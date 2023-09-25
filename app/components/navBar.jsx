@@ -39,7 +39,7 @@ useEffect(() => {
   };
 
   sections.forEach(section => {
-    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.7 });
+    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
     const sectionElement = document.getElementById(section);
     if (sectionElement) {
       observer.observe(sectionElement);
@@ -122,24 +122,3 @@ useEffect(() => {
     </div>
   );
 };
-
-        {/* Trait 1 */}
-        {/* <div
-          className={`w-8 h-1 bg-white m-1.5 ${
-            menuOpen ? 'transform rotate-45' : '' // Rotation et translation si ouvert
-          }`}
-        ></div> */}
-        {/* Trait 2 (disparait lorsque le menu est ouvert) */}
-        {/* <div
-          className={`w-8 h-1 bg-white m-1.5 ${
-            // menuOpen ? 'opacity-0' : 'transform -translate-y-1' // Translation vers le haut si fermé
-            menuOpen ? 'transform rotate-315':''
-          }`}
-        ></div> */}
-        {/* Trait 3
-        <div
-          onClick={toggleMenu}
-          className={`w-8 h-1 bg-white m-1 ${
-            menuOpen ? 'transform -rotate-45 -translate-y-2' : '' // Rotation inverse et translation si ouvert
-          }`}
-        ></div> */}
