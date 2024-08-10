@@ -1,2 +1,28 @@
+# cible tous les robots d'explorations
+# exemple pour cibler un robot :User-agent: Googlebot
+
+#exemple de plusieurs directives pour différents robots :
+#User-agent: Googlebot
+#Disallow: /no-google/
+#User-agent: Bingbot
+#Disallow: /no-bing/
+
 User-agent: *
+
+# directive aux robots les URL qu'il ne doivent pas explorer (pour les bloquer)
+#Disallow: /private-directory/ (bloque un repertoire)
+#Disallow: /private-page.html (bloque une page)
+#Disallow: / (bloque tous le site)
+
+# ici aucune restriction pour les robots d'indexation
 Disallow:
+
+# exemple d'utilisation de "Allow" pour autoriser une partie du site méme si le parent est interdit
+# Disallow: /private-directory/
+# Allow: /private-directory/public-file.html
+
+# indique le sitemap pour indexation plus simple.
+Sitemap: https://www.denis-thibaut.com/sitemap.xml
+
+# specifi un delai entre les requetes d'exploration pour eviter surcharge de serveur
+# exemple : Crawl-delay: 10

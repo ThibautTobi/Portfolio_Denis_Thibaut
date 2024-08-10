@@ -10,22 +10,37 @@
     width: 100%; /* Cette valeur sera écrasée par le style inline */
   }
 }
-
-/* li{
- padding: 4px;
- border-radius: 8px;
+.dark body {
+  background-color :rgb(82 82 82);
+  color: rgb(28 25 23);
 }
-li:hover{
-  background-color: rgb(100 116 139);
-} */
-/* 
-npm install typeface-inter
+.dark ul,p {
+  color: rgb(28 25 23);
+}
+.dark a  {
+  color: white;
+}
+.dark p {
+  color: rgb(28 25 23);
+}
+.dark button {
+  background-color :rgb(82 82 82);
+  color: white;
+}
+.dark button:hover {
+  background-color :rgb(82 82 82);
+  color :rgb(28 25 23);
+}
+/* Ajout des classes d'ombres personnalisées */
+/* Classe combinée */
+.shadow-combined {
+  --tw-shadow-inset: inset 0 5px 25px 5px rgb(30 41 59 / 80%);
+  --tw-shadow-outer: 0 0px 30px 10px #1e293b;
+  box-shadow: var(--tw-shadow-inset), var(--tw-shadow-outer);
+}
 
-
-import "typeface-inter";
-
-Main {
-  font-family: 'Inter', sans-serif;
-} 
-
-*/
+.dark .shadow-combined {
+  --tw-shadow-inset: inset 0 5px 25px 5px rgb(28 25 23 / 80%);
+  --tw-shadow-outer: 0 0px 30px 10px rgb(28 25 23 / 80%);
+  box-shadow: var(--tw-shadow-inset), var(--tw-shadow-outer);
+}

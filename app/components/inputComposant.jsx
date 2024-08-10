@@ -1,4 +1,4 @@
-
+/*************************** verification final */
 export default function InputComposant ({ label, name, value, type, required, maxLength, onChange }) {
 
     return (
@@ -7,7 +7,7 @@ export default function InputComposant ({ label, name, value, type, required, ma
         <input
           type={type}
           id={name}
-          className='border-solid border-slate-800 border-2 rounded hover:bg-slate-400 max-w-sm'
+          className='border-solid border-slate-800 border-2 rounded max-w-sm'
           name={name}
           value={value}
           onChange={onChange}

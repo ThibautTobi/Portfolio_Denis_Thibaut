@@ -13,6 +13,9 @@ import figmaIcon from '../../public/icone/figma.svg';
 import lighthouseIcon from '../../public/icone/lighthouse.svg';
 import methodeIcon from '../../public/icone/mug.svg';
 import duckIcon from '../../public/icone/duckDebugging.svg';
+import TypeScriptIcon from '../../public/icone/typescript.svg';
+import phpIcon from '../../public/icone/php.svg';
+import mysqlIcon from'../../public/icone/mysql.svg';
 
 export const dataCompetence = [
   {
@@ -25,6 +28,7 @@ export const dataCompetence = [
       { tech: 'JavaScript', icon: javascriptIcon, percentage: 80 },
       { tech: 'React', icon: reactIcon, percentage: 75 },
       { tech: 'Next.js', icon: nextjsIcon, percentage: 70 },
+      { tech: 'TypeScript', icon: TypeScriptIcon, percentage: 50 },
     ]
   },
   {
@@ -33,6 +37,8 @@ export const dataCompetence = [
       { tech: 'Node.js', icon: nodejsIcon, percentage: 80 },
       { tech: 'MongoDB', icon: mongoDbIcon, percentage: 50 },
       { tech: 'Vercel', icon: vercelIcon, percentage: 50 },
+      { tech: 'PHP', icon: phpIcon, percentage: 20 },
+      { tech: 'MySQL', icon: mysqlIcon, percentage: 20 },
     ]
   },
   {

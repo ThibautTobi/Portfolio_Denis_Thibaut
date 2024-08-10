@@ -1,25 +1,35 @@
+/*************************** verification final */
 import Image from 'next/image';
 import dataService from '../../data/data_service';
 
 export default function Service (){
 
     return(
-    <section id="service">
-        <div className="p-4 text-center mb-3">
-          <h2 className="text-2xl mb-2 font-bold text-slate-800 lg:text-4xl">Services</h2>
-            {dataService.map((service, index) => (
-                <article key={index} className='w-4/5 bg-slate-400 rounded-xl m-auto p-4 mb-6 lg:mb-10'>
+    <section id="service" className="p-4 text-center">
+          <h2 className="dark:dark:text-stone-800 text-2xl m-10 font-bold text-slate-800 lg:text-4xl">Services</h2>
+            {dataService.map((service) => (
+                <article key={service.id} className='w-4/5 dark:bg-neutral-400 bg-slate-400 rounded-xl m-auto p-5 mt-16 mb-16 lg:mb-10 shadow-combined'>
                 <Image 
+                // src={darkMode ? service.iconDark : service.iconLight} recréé les svg pour mode dark
                 src={service.icon} 
                 alt={service.alt} 
                 width={130} 
                 height={130} 
-                className='inline m-3' />
-                <h3 className='font-bold text-slate-800 mb-2 sm:text-xl lg:text-2xl'>{service.title}</h3>
-                <p className='text-left'>{service.description}</p>
+                className='inline m-3'
+                loading="lazy"
+                 />
+                <h3 className='dark:dark:text-stone-800 font-bold text-slate-800 mb-3 sm:text-xl lg:text-2xl'>{service.title}</h3>
+                <p className='text-center m-6'>{service.description}</p>
+                {/* a finir et verifier le bon codage */}
+                <h3 className='text-center dark:dark:text-stone-800 font-bold text-slate-800 mb-3 sm:text-lg lg:text-xl'>Quels sont les bénéfices ?</h3>
+                <ul>
+                    {service.benefice.map((benefice)=>(
+                        <li key={benefice.id} className='text-left m-4'>* {benefice}</li>
+                    ))}
+                </ul>
+                <p className='text-right font-caveat font-bold text-2xl m-8'>{service.cta}</p>
                 </article>
             ))}
-        </div>
     </section>
     )
 };
