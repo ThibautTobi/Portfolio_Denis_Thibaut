@@ -1,5 +1,4 @@
 'use client'
-/*************************** verification final voir juste probleme denvoie email contact*/
 import { useState,useEffect } from 'react';
 import Link from 'next/link';
 import ButtonToggle from './toggleButton';

@@ -35,7 +35,7 @@ export default function Presentation() {
         />
         <h2 className="font-ubuntu italic dark:text-stone-800 text-slate-800 mt-8 mb-8 text-2xl font-bold">Développeur Full Stack</h2>
 
-        <article className="dark:bg-neutral-400 bg-slate-400 w-4/5 text-lg rounded-xl m-auto p-5 mb-8 lg:mb-10 shadow-combined h-[680px] sm:h-[528px]">
+        <article className="dark:bg-neutral-400 bg-slate-400 w-4/5 text-lg rounded-xl m-auto p-5 mb-8 lg:mb-10 shadow-combined h-[620px] sm:h-[528px]">
           {/* 
             // Les blocs de texte ne sont rendus qu'à partir d'un certain activeStep.
             // Par exemple, le premier paragraphe apparaît lorsque activeStep est 1 ou plus.

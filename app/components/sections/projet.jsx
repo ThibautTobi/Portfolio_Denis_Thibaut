@@ -1,5 +1,4 @@
 'use client'
-/*************************** verification final */
 import { useState } from 'react';
 import dataProjets from "../../data/data_projets";
 import Image from "next/image";

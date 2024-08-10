@@ -24,10 +24,6 @@ export default function ProgressScrollBar ({menuOpen}){
                 // scrollPercentage : Calculé comme (scrollPosition / totalHeight) * 100, ce qui donne le pourcentage de défilement de la page
                 const scrollPercentage = (scrollPosition / totalHeight) * 100;
 
-                console.log('Total Height:', totalHeight);
-                console.log('Scroll Position:', scrollPosition);
-                console.log('Scroll Percentage:', scrollPercentage);
-
                 //mise a jour avec le resultat de l'operation 
                 setScrollY(scrollPercentage);
             }

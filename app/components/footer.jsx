@@ -1,4 +1,3 @@
-/*************************** verification final */
 import Link from "next/link";
 import Image from "next/image";
 import github from '../../public/icone/github.svg';

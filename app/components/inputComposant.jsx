@@ -1,4 +1,3 @@
-/*************************** verification final */
 export default function InputComposant ({ label, name, value, type, required, maxLength, onChange }) {
 
     return (
