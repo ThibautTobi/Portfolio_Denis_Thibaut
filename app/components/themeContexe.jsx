@@ -7,7 +7,8 @@ const ThemeContext = createContext();
 // Provider du contexte
 export const ThemeProvider = ({ children }) => {
   // État local pour suivre si le mode sombre est activé
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  /************************************* modification forcer avec true pour travailler les couleurs en mode clair */
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   // chargement du thème sauvegardé à partir du localStorage au montage du composant
   useEffect(() => {
