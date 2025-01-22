@@ -27,7 +27,7 @@ export default function Footer (){
                         className="dark:hover:bg-neutral-600 hover:bg-slate-500 p-2 rounded-lg lg:w-16 lg:h-16"/>
                     </Link>
                 </div>
-                <h2 className="text-center mb-2">© 2023 Thibaut Denis, Tous droits réservés.</h2>
+                <h2 className="text-center mb-2">© 2025 Thibaut Denis, Tous droits réservés.</h2>
             </div>
     )
 }

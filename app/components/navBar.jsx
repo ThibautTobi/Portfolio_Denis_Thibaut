@@ -1,7 +1,8 @@
 'use client'
 import { useState,useEffect } from 'react';
 import Link from 'next/link';
-import ButtonToggle from './toggleButton';
+// import supprimer temporairement pour modification couleur mode clair
+// import ButtonToggle from './toggleButton';
 import ProgressScrollBar from './progressScrollBar';
 
 export default function NavBar() {
@@ -83,7 +84,7 @@ useEffect(() => {
               <div onClick={toggleMenu} className='dark:bg-neutral-600 bg-slate-800 text-white w-6 h-6 rounded hover:bg-slate-500'>X</div>
 
               <ul className="dark:bg-stone-800 w-full flex flex-col space-y-2 to-slate-800 font-bold sm:text-white sm:flex-row sm:p-3">
-                <ButtonToggle />
+                {/* <ButtonToggle /> */}
                 <li>
                   <Link href="#presentation" onClick={closeMenu} className={`p-2 sm:border-none sm:p-3 ${activeSection === 'presentation' ? 'bg-slate-800 text-white border-none dark:bg-neutral-600 rounded-md' : ''}`}>Présentation</Link>
                 </li>
@@ -107,8 +108,8 @@ useEffect(() => {
 
       {/* Menu pour la version desktop */}
 
-      <div className="hidden sm:flex fixed w-full h-12 mt-0 text-center justify-between sm:h-16 lg:h-20">
-        <ButtonToggle />
+      <div className="hidden sm:flex fixed w-full h-12 mt-0 text-center justify-center sm:h-16 lg:h-20">
+        {/* <ButtonToggle /> */}
         <ul className="dark:bg-stone-800 flex flex-row items-center space-x-2 bg-slate-800 font-bold sm:text-white sm:p-3 lg:space-x-4">
           <li className='sm:p-2 sm:rounded-lg sm:hover:bg-slate-500 dark:hover:bg-neutral-600'>
             <Link href="#presentation" className={`${activeSection === 'presentation' ? 'border-b-2 lg:border-b-3' : ''}`}>Présentation</Link>
